@@ -67,7 +67,7 @@ const Navbar = () => {
     borderBottom: `1px solid ${
       themeMode === "dark" ? "rgba(211, 211, 211, 0.1)" : "rgba(211, 211, 211, 0.04)"
     }`,
-   backgroundColor: themeMode === "dark" ? " #020617 !important " : "rgba(232, 233, 255, 0.42) !important", 
+   backgroundColor: themeMode === "dark" ? " #020617 !important " : "white !important", 
   }}
   className="navbar"
 >

@@ -52,7 +52,7 @@ function VideoSection() {
           width: { xl: "75%",sm: "93%",md:"84%" },
           maxWidth: { xl: "100%", sm: "100%", md: "100%" }, 
           backgroundColor: themeMode === "dark" 
-          ? "#201734"  // ✅ Dark Mode Background
+          ? " #224ab7"  // ✅ Dark Mode Background
           : "rgba(211, 211, 211, 0.24)",
           mt:5,"@media (max-width: 900px)": {
             mt: 2, 

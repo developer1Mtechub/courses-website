@@ -6,6 +6,7 @@ import { useTheme } from "@mui/material/styles";
 import { ThemeContext } from "../../theme/themeContext";
 import { FAQS_SECTION } from "../../textConstant/textconstants";
 import { FAQS_BOTTOM_QUESTION,FAQS_BOTTOM_CONTACT } from "../../textConstant/textconstants";
+import logos from "../../assets/logos.png"
 const faqs = [
   { question: FAQS_SECTION.first.question, 
     answer: FAQS_SECTION.first.answer
@@ -67,7 +68,8 @@ const FAQsSection = () => {
           ,          "@media (max-width: 900px)": {
         fontWeight:"400"
           }
-          }}>
+          }}
+          id='Faqs-section'>
          Get answers to your burning questions with our comprehensive FAQ section. From course details to technical queries, we've got you covered
          </Typography>
       <Box sx={{mt:4,}}>
@@ -143,7 +145,9 @@ const FAQsSection = () => {
                           // height:"130vh"
                         }
             }}>{FAQS_BOTTOM_QUESTION}</Typography> 
-             <span style={{color:"#41b8ee" ,textDecoration:"none"}}>{FAQS_BOTTOM_CONTACT}</span>
+             <a href="mailto:info@musama.dev" style={{ color: "#41b8ee", textDecoration: "none" }}>
+  {FAQS_BOTTOM_CONTACT}
+</a>
               </Box>
       </Box>
     </Container>

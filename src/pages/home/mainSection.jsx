@@ -2,11 +2,13 @@
 import React from "react";
 import { Card, CardContent, Grid, Typography, Avatar, Box } from "@mui/material";
 // import mainimage from "../../assets/mainimage.webp";
-import { Twitter, Butterfly, LinkedIn, Discord, Youtube } from "../../assets/icons";
+// import { Twitter, Butterfly, LinkedIn, Discord, Youtube } from "../../assets/icons";
+import { IconButton } from "@mui/material";
 import { useContext } from "react";
 import { useTheme } from "@mui/material/styles";
 import { ThemeContext } from "../../theme/themeContext";
-import mainimage from "../../assets/mainimage.jpeg"
+import mainimage from "../../assets/mainimage.jpeg";
+import { Facebook, Instagram, YouTube, LinkedIn } from "@mui/icons-material";
 import { HOME_PAGE_BEHIND_SECTION_HEADING,HOME_PAGE_BEHIND_SECTION_DESCRIPTION,HOME_PAGE_BEHIND_SECTION_TEXT1,HOME_PAGE_BEHIND_SECTION_TEXT2
 ,HOME_PAGE_BEHIND_SECTION_TEXT3,HOME_PAGE_BEHIND_SECTION_TEXT4,HOME_PAGE_BEHIND_SECTION_TEXT5,HOME_PAGE_BEHIND_SECTION_TEXT6,
 HOME_PAGE_BEHIND_SECTION_TEXT7
@@ -14,6 +16,11 @@ HOME_PAGE_BEHIND_SECTION_TEXT7
 const MainSection = () => {
       const theme = useTheme(); // Get the theme colors
       const { themeMode } = useContext(ThemeContext); 
+
+        const openLink = (url) => {
+          window.open(url, "_blank", "noopener,noreferrer");
+        };
+
   return (
     <Box sx={{ 
       width: { xl: "80%",sm: "80%",md:"89%" },
@@ -52,6 +59,7 @@ const MainSection = () => {
             fontSize: "18px",
             lineHeight: "1.4",
           }}
+                id='about-section'
         >
     {HOME_PAGE_BEHIND_SECTION_DESCRIPTION}
         </Typography>
@@ -59,6 +67,7 @@ const MainSection = () => {
 
       {/* Content Section */}
       <Grid
+
         container
         spacing={3}
         alignItems="center"
@@ -107,34 +116,33 @@ const MainSection = () => {
 
             {/* Social Icons */}
             <Box sx={{ display: "flex", gap: 2, alignItems: "center", mt: 3 }}>
-              {/* <Twitter className="icon2" /> */}
-              <Box sx={{ color: "#979aa2", "&:hover svg": { color: themeMode === "dark"   ? "white"  : "black", }
-              , cursor: "pointer" }}>
-           <Twitter />
-             </Box>
-             <Box sx={{ color: "#979aa2", "&:hover svg": { 
-          color: themeMode === "dark" ? "white"  : "black", }, cursor: "pointer" }}>
-           <Butterfly />
-            </Box>
-         <Box sx={{ color: "#979aa2", "&:hover svg": { 
-        color: themeMode === "dark" ? "white" : "black",  }, cursor: "pointer" }}>
-  <LinkedIn />
-</Box>
-<Box sx={{ color: "#979aa2", "&:hover svg": {
-color: themeMode === "dark" 
-? "white" 
-: "black"
-   ,}, cursor: "pointer" }}>
-  <Discord />
-</Box>
+ 
 
-<Box sx={{ color: "#979aa2", "&:hover svg": {
-color: themeMode === "dark" 
-? "white" 
-: "black",
-    }, cursor: "pointer" }}>
-  <Youtube />
-</Box>
+<IconButton onClick={() => openLink("https://www.linkedin.com/in/devmusama/")} color="primary"
+    sx={{
+      "&:hover": {
+        color: "primary.button",
+      },
+    }}
+  >
+        <LinkedIn />
+      </IconButton>
+      <IconButton onClick={() => openLink("https://www.instagram.com/musama.dev?igsh=d2l5aDQ3Mnk3cHVw&utm_source=qr")} color="primary"
+          sx={{
+            "&:hover": {
+              color: "primary.button",
+            },
+          }}>
+        <Instagram />
+      </IconButton>
+      <IconButton onClick={() => openLink("https://www.facebook.com/dev.musama/")} color="primary"
+          sx={{
+            "&:hover": {
+              color: "primary.button",
+            },
+          }}>
+        <Facebook />
+      </IconButton>
             
             </Box>
           </CardContent>
@@ -155,11 +163,12 @@ color: themeMode === "dark"
 
       width: "100%",
       maxWidth: "500px",
-      height: "auto",
+      height: "660px",
       borderRadius: "10px",
       objectFit: "cover",
       marginBottom:"20px",
       cursor:"pointer",
+
           opacity:themeMode === "dark"  ? 1 : 1,  // Ensures full opacity
     filter: themeMode === "dark"  ? "none" : "none"
     }}

@@ -9,7 +9,7 @@ const CustomButton = ({ children, onClick, themeMode }) => {
       sx={{
         borderRadius: "6px",
         padding: "6px 20px",
-        color: themeMode === "dark" ? "white" : "white",
+        color: themeMode === "dark" ? "black" : "black",
         textTransform: "none",
         boxShadow: "none",
         fontSize: "14px",
@@ -17,9 +17,9 @@ const CustomButton = ({ children, onClick, themeMode }) => {
         fontWeight: 500,
         "&:hover": {
           boxShadow: "none",
-          backgroundColor: themeMode === "dark" ? " #ffb402" : "#0f172a",
-          color: themeMode === "dark" ? "white" : "white",
-         opacity: themeMode === "dark" ? "1" : "0.8",
+          backgroundColor: themeMode === "dark" ? " #ffb402" : " #ffb402",
+          color: themeMode === "dark" ? "black" : "black",
+         opacity: themeMode === "dark" ? "1" : "1",
           border: "none",
         },
       }}
