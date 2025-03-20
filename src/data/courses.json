@@ -1,0 +1,346 @@
+[
+    {
+      "id": 1,
+      "course_icon_name": "bulb",
+      "course_title": "Introduction",
+      "course_description": "Get started with React Native and Expo. Learn about the development environment setup and understand the new React Native architecture.",
+      "course_content": [
+        { 
+        "title": "How to take this course",
+          "duration_in_min":2
+        },
+        {
+          "title": " Why Expo",
+          "duration_in_min":4
+        },
+        {
+          "title": "Android Environment Setup",
+          "duration_in_min": 4
+        },
+        {
+            "title": "iOS Environment Setup",
+            "duration_in_min": 2 
+          },
+          {
+            "title": "RN New Architecture",
+            "duration_in_min": 4
+          },
+          {
+            "title": "Expo Go vs Development Builds",
+            "duration_in_min":  9
+          }
+      ]
+    },
+    {
+      "id": 2,
+      "course_icon_name": "api",
+      "course_title": "Components and APIs",
+      "course_description": "Master React Native components from basic to advanced. Learn how to create reusable custom components and implement complex UI patterns.",
+      "course_content": [
+        {
+          "title": " Basic Components",
+          "duration_in_min": 13
+        },
+        {
+          "title": "Custom Components",
+          "duration_in_min": 6
+        },
+        {
+          "title": "Advanced Custom Components",
+          "duration_in_min": 21
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "course_icon_name": "style",
+      "course_title": "Style and Design",
+      "course_description": "Learn how to create beautiful and responsive UIs using Figma designs, implement proper styling patterns, and handle dark mode effectively.",
+      "course_content": [
+        {
+          "title": " Designing with Figma",
+          "duration_in_min": 19
+        },
+        {
+          "title": " Style & StyleSheet",
+          "duration_in_min": 24
+        },
+        {
+          "title": "Design System Tips",
+          "duration_in_min": 9
+        },
+        {
+          "title": "Layout with Flexbox",
+          "duration_in_min": 19
+        },
+        {
+          "title": "Dark Mode",
+          "duration_in_min": 9
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "course_icon_name": "expo",
+      "course_title": "Expo Router",
+      "course_description": "Master file-based routing with Expo Router. Learn how to implement authentication flows, and deep linking.",
+      "course_content": [
+        {
+          "title": " File Base Routing",
+          "duration_in_min": 24
+        },
+        {
+          "title": "Dynamic Routes",
+          "duration_in_min": 7
+        },
+        {
+          "title": "Stack & Tabs",
+          "duration_in_min": 11
+        },
+        {
+          "title": " Router Hooks",
+          "duration_in_min": 19
+        },
+        {
+          "title": "Authentication Flow",
+          "duration_in_min": 24
+        },
+        {
+          "title": "Role Based Access",
+          "duration_in_min": 6
+        },
+        {
+          "title": " Deep Linking",
+          "duration_in_min": 14
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "course_icon_name": "animation",
+      "course_title": "Animation and Gestures",
+      "course_description": "Create fluid animations and implement complex gesture interactions in your React Native applications.",
+      "course_content": [
+        {
+          "title": " Animations and Gestures",
+          "duration_in_min": 42
+        },
+        {
+          "title": "Composition & Interactions",
+          "duration_in_min": 6
+        },
+        {
+          "title": "Swipeable Components",
+          "duration_in_min": 14
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "course_icon_name": "testing",
+      "course_title": "Testing",
+      "course_description": "Learn how to implement comprehensive testing strategies using Jest, React Native Testing Library and Maestro for end-to-end testing.",
+      "course_content": [
+        {
+          "title": " Unit Test with Jest",
+          "duration_in_min": 33
+        },
+        {
+          "title": "E2E with Maestro",
+          "duration_in_min": 37
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "course_icon_name": "notifications",
+      "course_title": "Push Notifications",
+      "course_description": "Implement push notifications using both Expo Notifications and OneSignal, understanding the advantages and trade-offs of each approach.",
+      "course_content": [
+        {
+          "title": "Expo Notifications",
+          "duration_in_min": 51
+        },
+        {
+          "title": "OneSignal Integration",
+          "duration_in_min": 42
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "course_icon_name": "backend",
+      "course_title": "Backend Basics",
+      "course_description": "Learn essential backend concepts and how to handle server-side operations in your React Native app.",
+      "course_content": [
+        {
+          "title": "Environment Variables",
+          "duration_in_min": 17
+        },
+        {
+          "title": "Expo Router API Routes",
+          "duration_in_min": 17
+        },
+        {
+          "title": "Streaming Data with Expo Fetch",
+          "duration_in_min": 11
+        },
+        {
+          "title": "Deploying with EAS Hosting",
+          "duration_in_min": 10
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "course_icon_name": "backend",
+      "course_title": "Supabase",
+      "course_description": "Learn how to integrate Supabase as your backend service, including database operations.",
+      "course_content": [
+        {
+          "title": " Supabase UI Tour",
+          "duration_in_min":8
+        },
+        {
+          "title": "Creating Tables",
+          "duration_in_min": 7
+        },
+        {
+          "title": "Installation and CRUD Operations",
+          "duration_in_min": 10
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "course_icon_name": "build",
+      "course_title": "EAS Build",
+      "course_description": "Learn how to use EAS Build",
+      "course_content": [
+        {
+          "title": " Development Builds",
+          "duration_in_min": 22
+        },
+        {
+          "title": "Preview Builds",
+          "duration_in_min": 2
+        },
+        {
+          "title": "Production Builds",
+          "duration_in_min": 9
+        },
+        {
+          "title": "Automating App Version Code",
+          "duration_in_min": 5
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "course_icon_name": "submit",
+      "course_title": "EAS Submit",
+      "course_description": "Learn how to automate app submission to the App Store and Play Store.",
+      "course_content": [
+        {
+          "title": "Submit to App Store",
+          "duration_in_min":8
+        },
+        {
+          "title": "Submit to Google Play",
+          "duration_in_min": 13
+        }
+     
+      ]
+    },
+    {
+      "id": 12,
+      "course_icon_name": "update",
+      "course_title": "EAS Update",
+      "course_description": "Learn how to configure and deploy over-the-air updates using EAS Update.",
+      "course_content": [
+        {
+          "title": "Configuring EAS Update",
+          "duration_in_min": 8
+        },
+        {
+          "title": "Deploying Updates",
+          "duration_in_min": 20
+        },
+        {
+          "title": "Reverting Updates",
+          "duration_in_min": 7
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "course_icon_name": "workflows",
+      "course_title": "EAS Workflows",
+      "course_description": "Learn how to set up CI/CD pipelines using EAS Workflows.",
+      "course_content": [
+        {
+          "title": " Getting Started with Workflows",
+          "duration_in_min": 11
+        },
+        {
+          "title": "E2E with Maestro Workflow",
+          "duration_in_min": 20
+        },
+        {
+          "title": "Build and Submit Workflow",
+          "duration_in_min": 8
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "course_icon_name": "publish",
+      "course_title": "Publishing",
+      "course_description": "Learn how to prepare and submit your app to the App Store and Play Store.",
+      "course_content": [
+        {
+          "title": " App Store Submission",
+          "duration_in_min": 40
+        },
+        {
+          "title": "Play Store Submission",
+          "duration_in_min": 35
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "course_icon_name": "payment",
+      "course_title": "Payments",
+      "course_description": "Learn how to implement different payment solutions including in-app purchases with RevenueCat and payment processing with Stripe.",
+      "course_content": [
+        {
+          "title": "Payment Basics",
+          "duration_in_min": 15
+        },
+        {
+          "title": "In-app Purchases",
+          "duration_in_min": 54
+        },
+        {
+          "title": "Stripe Integration",
+          "duration_in_min":40
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "course_icon_name": "bonus",
+      "course_title": "Bonus",
+      "course_description": "Enhance your app with advanced features like home screen widgets and other platform-specific integrations to create a more engaging user experience.",
+      "course_content": [
+        {
+          "title": " Apple Widgets",
+          "duration_in_min": 40
+        }
+      ]
+    }
+
+
+  ]
+  
