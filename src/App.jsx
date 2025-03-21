@@ -23,7 +23,6 @@ import "@fontsource/inter/500-italic.css";
 import { ThemeProvider } from "@mui/material/styles";
 import ThemeContextProvider from "./theme/themeContext"; 
 import CssBaseline from "@mui/material/CssBaseline";
-// import theme from "./theme/theme"; 
 function App() {
   return (
     <>

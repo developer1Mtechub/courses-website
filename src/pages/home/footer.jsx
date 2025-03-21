@@ -5,15 +5,70 @@ import { Box, Grid, Typography, List, ListItem, Link, IconButton } from "@mui/ma
 import CustomIcon from "../../assets/customicon";
 import { Moon, Laptop, Sun } from "../../assets/icons";
 import { ThemeContext } from "../../theme/themeContext"; 
- import {FOOTER_DATA} from "../../textConstant/textconstants"
+//  import {FOOTER_DATA} from "../../textConstant/textconstants";
+ import logos from "../../assets/logos.png"
+ const handleCourses=()=>{
+  document.getElementById("courses-section")?.scrollIntoView({ behavior: "smooth" });
+ }
+ const handleAbout=()=>{
+  document.getElementById("about-section")?.scrollIntoView({ behavior: "smooth" });
+ }
+ const handlePricing=()=>{
+  document.getElementById("pricing-section")?.scrollIntoView({ behavior: "smooth" });
+ }
+ const handleFAQS=()=>{
+  document.getElementById("Faqs-section")?.scrollIntoView({ behavior: "smooth" });
+ }
+  const FOOTER_DATA = [
+   {
+     title: "Course Detail",
+     onClick: handleCourses,
+     links: [
+       // { name: "React Native Course", path: "/" },
+       // { name: "Projects", path: "/projects" },
+       // { name: "Resources", path: "/resources" },
+       // { name: "Blog", path: "/blog" },
+       // { name: "About", path: "/about" },
+       // { name: "Eco Studios" },
+     ],
+   },
+   {
+     title: "About",
+     onClick: handleAbout,
+     // links: [
+     //   { name: "Youtube-English" },
+     //   { name: "Youtube-Spanish" },
+     //   { name: "Github" },
+     //   { name: "Discord" },
+     // ],
+   },
+   {
+     title: "Pricing",
+     onClick: handlePricing,
+     // links: [
+     //   { name: "Instagram" },
+     //   { name: "Twitter" },
+     //   { name: "Linkedin" },
+     // ],
+   },
+   {
+     title: "FAQS",
+     onClick:handleFAQS,
+     // links: [
+     //   { name: "Become a sponsor" },
+     //   { name: "Report an issue" },
+     // ],
+   },
+ ];
 const Footer = () => {
   const navigate = useNavigate();
   const { themeMode, toggleDarkMode, toggleLightMode, toggleSystemMode } = useContext(ThemeContext);
   const handleNavigation = (path) => () => {
     navigate(path);
   };
+
   return (
-    <Box sx={{ color: "black", p: 3, mt: 2 }}>
+    <Box sx={{ color: "black", p: 3,pt:0, mt: 2 }}>
       <Box 
   sx={{
     width: "100%", 
@@ -21,30 +76,23 @@ const Footer = () => {
     mt: 2, 
   }}
 />
-      <Grid container spacing={1} justifyContent="space-between" sx={{ mt: 4 }}>
+      <Grid container spacing={1} justifyContent="space-between" alignItems="center" sx={{ mt: 1 }}>
         <Grid item xs={12} sm={4} sx={{ px: 2 }}>
-          <Box sx={{ display: "flex", alignItems: "center" }}>
-            <IconButton edge="start" color="inherit">
-              <CustomIcon style={{ color: "inherit", cursor: "pointer" }} />
-            </IconButton>
-            <Typography 
-              variant="h6"  
-              color="primary.main" 
-              sx={{ fontWeight: "700", cursor: "pointer" }} 
-              onClick={handleNavigation("/")}
-            >
-              Code with Beto
-            </Typography>
+          <Box >
+            <img src={logos} className="logo"/>
           </Box>
         </Grid>
         {FOOTER_DATA.map((section, index) => (
           <Grid key={index} item xs={6} sm={2}>
-            <Typography variant="h6" fontWeight="bold" color="primary.main" sx={{pl:1.2,
-          
-            }}>
+            <Typography variant="h6" fontWeight="500" color="primary.main" sx={{pl:1.2,
+          fontSize:"20px",
+          cursor:"pointer"
+            }}
+            onClick={section.onClick} 
+            >
               {section.title}
             </Typography>
-            <List dense>
+            {/* <List dense>
               {section.links.map((link, idx) => (
                 <ListItem key={idx} sx={{
                   "@media (max-width: 648px)": {
@@ -54,8 +102,8 @@ const Footer = () => {
                     py:1
            
                         },
-                }} >
-                  <Link
+                }} > */}
+                  {/* <Link
                     component="button"
                     color="primary.description"
                     underline="none"
@@ -71,10 +119,10 @@ const Footer = () => {
                     }}
                   >
                     {link.name}
-                  </Link>
-                </ListItem>
+                  </Link> */}
+                {/* </ListItem>
               ))}
-            </List>
+            </List> */}
           </Grid>
         ))}
         <Box 

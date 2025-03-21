@@ -59,7 +59,7 @@ export const lightTheme = createTheme({
       description: "#666972",
       cards: "#80828b",
       icon:"black",
-      button:" #0f172a",
+      button:" #ffb402",
         hero:"#2b5ffe"
     },
     secondary: {

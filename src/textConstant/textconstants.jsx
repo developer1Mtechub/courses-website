@@ -117,43 +117,7 @@ export const CODE_HERO_CARDS_BUTTON=import.meta.env.VITE_CODE_HERO_CARDS_BUTTON
 ];
 
 // Footer
-export const FOOTER_DATA = [
-  {
-    title: "Code with Beto",
-    links: [
-      { name: "React Native Course", path: "/" },
-      { name: "Projects", path: "/projects" },
-      { name: "Resources", path: "/resources" },
-      { name: "Blog", path: "/blog" },
-      { name: "About", path: "/about" },
-      { name: "Eco Studios" },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      { name: "Youtube-English" },
-      { name: "Youtube-Spanish" },
-      { name: "Github" },
-      { name: "Discord" },
-    ],
-  },
-  {
-    title: "Social Media",
-    links: [
-      { name: "Instagram" },
-      { name: "Twitter" },
-      { name: "Linkedin" },
-    ],
-  },
-  {
-    title: "About",
-    links: [
-      { name: "Become a sponsor" },
-      { name: "Report an issue" },
-    ],
-  },
-];
+
 
 
 // Home screen(/learn)

@@ -64,10 +64,12 @@ function CourseSection() {
         alignItems: "center",
         textAlign: "center",
         padding: 2,
+           
         "@media (max-width: 648px)": {
             mt: 0, 
           },
       }}
+      
       
     >
       <Typography variant="h3" sx={{ fontWeight: "bold", mb: 1 , 
@@ -80,15 +82,23 @@ function CourseSection() {
       }}>
      {HOME_PAGE_COURSES_TITLE}
       </Typography>
-      <Typography color="primary.description" sx={{fontWeight:"600", maxWidth: "500px", fontSize: "18px", lineHeight: "1.4" }}>
+      <Typography  id="courses-section" color="primary.description" sx={{fontWeight:"600", maxWidth: "500px", fontSize: "18px", lineHeight: "1.4" }}>
   {HOME_PAGE_COURSES_DESCRIPTION}
       </Typography>
-
-      <Grid container spacing={3} sx={{  width: "100%",
-    maxWidth: { xl: "85%", sm: "100%", md: "100%",lg:"100%" },  mt: 4,px:10,   
+   
+      <Grid    container spacing={3} sx={{  width: "100%",
+    maxWidth: { xl: "85%", sm: "150%", md: "100%",lg:"100%" },  mt: 4,
+    px:10,   
     "@media (max-width: 900px)": {
         px:0,
-        width:"100%"
+        width:"100%",
+        pl:0,
+        pr:0,
+        // border:"1px solid red",
+        margin:"0 auto",
+        mt:4,
+        ml:1,
+
       },
       "@media (min-width: 900px) and (max-width: 1024px)": {
         px:0,
@@ -97,7 +107,7 @@ function CourseSection() {
 
        }}>
   
-    <Grid container spacing={2}>
+    <Grid container spacing={2} >
       {coursesData.map((course) => (
         <Grid item xs={12} sm={6} md={4} key={course.id}>
           <Box
@@ -194,6 +204,7 @@ function CourseSection() {
       ))}
     </Grid>
       </Grid>
+
     </Box>
   );
 }

@@ -338,6 +338,10 @@ color:white;
   .footer_line{
     margin-top:10px;
   }
+  .responsive-image{
+  
+    display:none;
+  }
   .responsive-image {
     /* margin-right:45px;*/
 /* margin-right:25px; */

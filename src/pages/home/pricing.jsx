@@ -59,13 +59,17 @@ const Pricing = () => {
           {HOME_PAGE_PRICING_SECTION_ANIMATED_BUTTON}
           </Typography>
       </Box>
-      <Grid container spacing={3} justifyContent="center" sx={{ 
+      <Grid  id="pricing-section"  container spacing={3} justifyContent="center" sx={{ 
   mt: 3, 
   maxWidth: "750px", 
   margin: "0 auto", 
   overflow: "hidden", 
+  // border:"1px solid red",
   px: 2,
-  "@media (max-width: 900px)": { maxWidth:"100%",p:0,margin:"10 auto"} 
+  "@media (max-width: 900px)": 
+  { maxWidth:"100%",pr:3,margin:"10 auto",pl:0,
+
+  } 
 }}>
   {pricingData.map((plan, index) => (
     <Grid item xs={12} sm={6} key={index} sx={{ 

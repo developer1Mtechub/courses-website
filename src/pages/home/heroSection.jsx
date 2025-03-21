@@ -38,11 +38,17 @@ const icons = [
 const HeroSection = () => {
   const theme = useTheme(); 
   const { themeMode } = useContext(ThemeContext); 
+  const scrollToPricing = () => {
+    document.getElementById("pricing-section")?.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToCourses = () => {
+    document.getElementById("courses-section")?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <Box 
     sx={{
       // minHeight: "100vh", 
-      height:"91%",
+      height:"95vh",
       width: "100vw", 
       boxSizing: "border-box",
         overflow:"hidden",
@@ -52,7 +58,7 @@ const HeroSection = () => {
         alignItems: "center",
         textAlign: "center",
         border:"none",
-      pb:25,
+      pb:30,
         position: "relative",
         background: themeMode === "light"
         ? "linear-gradient(to right, #dceaff 30%, rgba(238, 174, 202, 0.6) 70%)"
@@ -138,6 +144,7 @@ const HeroSection = () => {
       opacity: 1,
     },
   }}
+  onClick={scrollToPricing}
 >
        {HOME_PAGE_HERO_START_BUTTON}
         </Button>
@@ -159,6 +166,7 @@ const HeroSection = () => {
             transform: "scale(1.05)",
           },
         }}
+        onClick={scrollToCourses}
       >
        {HOME_PAGE_HERO_COURSE_DETAILS}
       </Button> 
