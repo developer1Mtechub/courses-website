@@ -33,7 +33,14 @@ function VideoSection() {
          }}>
        {HOME_PAGE_VIDEO_SECTION_HEADING}
          </Typography>
-         <Typography color="primary.description" sx={{fontWeight:"600", textAlign:"center",pl:3, maxWidth: "500px", fontSize: "20px", lineHeight: "1.4" }}>
+         <Typography color="primary.description" sx={{fontWeight:"600", textAlign:"center",pl:3, maxWidth: "500px", fontSize: "20px", lineHeight: "1.4" ,
+            "@media (max-width: 900px)": 
+            {
+              pl:1,
+              pr:1
+          
+            } 
+         }}>
          {HOME_PAGE_VIDEO_SECTION_DESCRIPTION}
          </Typography>
       </Box>

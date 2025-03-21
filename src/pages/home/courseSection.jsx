@@ -64,6 +64,7 @@ function CourseSection() {
         alignItems: "center",
         textAlign: "center",
         padding: 2,
+           
         "@media (max-width: 648px)": {
             mt: 0, 
           },
@@ -86,11 +87,18 @@ function CourseSection() {
       </Typography>
    
       <Grid    container spacing={3} sx={{  width: "100%",
-    maxWidth: { xl: "85%", sm: "150%", md: "100%",lg:"100%" },  mt: 4,px:10,   
+    maxWidth: { xl: "85%", sm: "150%", md: "100%",lg:"100%" },  mt: 4,
+    px:10,   
     "@media (max-width: 900px)": {
         px:0,
         width:"100%",
-        pl:3,
+        pl:0,
+        pr:0,
+        // border:"1px solid red",
+        margin:"0 auto",
+        mt:4,
+        ml:1,
+
       },
       "@media (min-width: 900px) and (max-width: 1024px)": {
         px:0,

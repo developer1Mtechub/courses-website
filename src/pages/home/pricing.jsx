@@ -67,7 +67,7 @@ const Pricing = () => {
   // border:"1px solid red",
   px: 2,
   "@media (max-width: 900px)": 
-  { maxWidth:"100%",pr:2,margin:"10 auto"
+  { maxWidth:"100%",pr:3,margin:"10 auto",pl:0,
 
   } 
 }}>
